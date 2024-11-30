@@ -1,0 +1,290 @@
+*{
+    padding: 0;
+    margin: 0;
+   
+}
+
+html,
+body {
+  height: 100%;
+  min-height: 100%;
+
+}
+
+body {
+  position: relative;
+  background: #151515;
+  color: #ffffff;
+  height: 2000px;
+}
+.container{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.header-content{
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    position: fixed;
+    z-index: 999;
+    top:0px; 
+    left:0px; 
+    width:100%; 
+      
+}
+.burger{
+    background-color: brown;
+    display: flex;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 50px;
+}
+
+
+
+.profile-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile-content.delete{
+    display: none;
+}
+
+.profile-content img{
+       width: 100px;
+       object-fit: cover;
+       height: 100px;
+        border-radius: 1000px;
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        max-height: 100%;
+      
+    }
+
+#delete-profile{
+   width: 250px;
+    background-color: red;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.modal{
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+  
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.3s ease;
+
+}
+
+.modal.open{
+    display: block;
+}
+
+
+
+.modal__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20% auto;
+    padding: 20px;
+    width: 80%;
+    max-width: 500px;
+    background-color: #fff;
+    color: #151515;
+    gap:20px;
+    border-radius: 10px;
+    font-size: 30px;
+}
+.modal__buttons{
+    display: flex;
+    gap: 30px;
+    
+}
+.modal__buttons button{
+    background-color: #151515;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.menu{
+    background-color: aliceblue;
+    width: 800px;
+    right: 0;
+    z-index: 999;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    transform: translateX(100%);
+    transition: transform 0.5s;
+}
+
+.menu.openburger{
+    transform: translateX(0);
+}
+
+.closeBurger{
+    background-color: cadetblue;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    margin: 40px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.cont{
+    display: flex;
+    background-color: #ec3838;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0;
+    align-items: center;
+    justify-content: start;
+    gap: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition:  0.2s ease-in-out; 
+    }
+
+    .cont:hover{
+        background-color: #b60101;
+      
+    }
+
+
+.content-left{
+    background-color: rgb(8, 8, 8);
+   padding: 20px;
+    left: 0;
+    position: fixed;
+    height: 100%;
+    top: 0;
+    margin-top: 80px;
+    width: 65px; 
+    overflow: hidden; 
+    transition: width 0.5s ease-in-out; 
+    
+}
+
+.left-container{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+}
+
+
+.User{
+    display: flex;
+    transition: opacity 0.3s ease-in-out;
+    cursor: pointer;
+   
+}
+
+
+.User p {
+    display: block; 
+    opacity: 0; 
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .User p.openLeft {
+    opacity: 1; 
+  }
+
+
+  .text-content {
+    height: 100%;
+    
+
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0; 
+  }
+
+  .text-content.openLeft {
+    opacity: 1;
+  }
+
+
+  .accordion{
+    display: flex;
+  }
+
+ .cont-accordiion{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+ }
+
+ .content-accordion{
+    display: flex;
+    flex-direction: column;
+    background-color: #3d3939;
+    padding: 15px;
+    border-radius: 10px;
+    width: 400px;
+    gap: 50px;
+    height: 30px;
+    cursor: pointer;
+    
+    transition: height 0.3s ease-in-out;
+ }
+
+
+ .header-accordion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+
+.main-accordion{
+    transition: height 0.3s ease-in-out;
+    overflow: hidden;
+    height: 0px;
+}
+
+.header-accordion img{
+    transform: rotate(0deg);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.content-accordion:hover{
+    transition: 0.1s ease-in-out;
+    background-color: #151515;
+}

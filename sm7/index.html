@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="public/style/style.css">
+
+    <script src="public/js/index.js" defer ></script>
+
+    <title>Document</title>
+</head>
+
+    
+<header> 
+
+            <div class="header-content">
+
+                <h1>Аккаунты</h1>
+
+                <div class="burger" onclick="openMenu()">
+
+                  
+                        <img src="public/images/menu.svg" alt="">
+                   
+
+                </div>
+
+            </div>
+
+    </header>
+    
+
+<body>
+
+        <div class="menu">
+            
+            <div class="container">
+
+                <div class="closeBurger" onclick="closeMenu()" >
+                    <img src="public/images/close.svg" alt="">
+                </div>
+
+            </div>
+
+        </div>
+
+    <section>
+
+        <div class="container">
+
+            <div class="content">
+
+                <h1>Профиль</h1>
+
+                <div class="profile-content">
+
+                    <img src="public/images/pavel.jpg" alt="" class="pavel"> 
+                    <h3>Паша Какой - то</h3>
+                </div>
+
+                <button id = "delete-profile"  onclick="openModal()">Удалить профиль</button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <div id="myModal" class="modal">
+
+        <div class="modal__content">
+
+          <h3>Хотите удалить?</h3>
+
+          <div class="modal__buttons">
+
+            <button onclick="closeModal()" >не,я передкмала</button>
+            <button class="danger outline" onclick=" deleteProfile(event, '1', 'e#J$#IFE3u423ef')" >Хочу</button>
+
+          </div>
+        </div>
+      </div>
+
+
+      <section">
+
+        <div class="content-left" onmouseenter="openLeft()" onmouseleave="closeLeft()">
+            
+            <div class="left-container">
+
+                <div class="cont">
+                <div class="User">
+                    <img src="public/images/menu.svg" alt="">
+                </div>
+                <div class="text-content"> <p>dsfsdfrtyrtyrtyrty </p> </div> 
+                </div>
+
+                <div class="cont">
+                    <div class="User">
+                    <img src="public/images/menu.svg" alt="">
+                    </div>
+                    <div class="text-content"> <p>dsfsdfrtyr</p> </div> 
+                </div>
+            
+                </div>
+
+        </div>
+      
+       
+
+      </section>
+
+
+
+<main>
+
+   <div class="container">
+
+    <div class="accordion">
+
+        <div class="cont-accordiion">
+
+            <div class="content-accordion" onclick="toggleAccordion(this)" >
+
+                <div class="header-accordion">
+
+                    <h2>Открыть</h2>
+
+                    <img src="/public/images/add.svg" alt="" >
+                
+
+                </div>
+
+                <div class="main-accordion">
+
+                    <h3>Заголовок</h3>
+                    <p>описание</p>
+
+                </div>
+
+            </div>
+
+            <div class="content-accordion" onclick="toggleAccordion(this)" >
+
+                <div class="header-accordion">
+
+                    <h2>Открыть2</h2>
+
+                    <img src="/public/images/add.svg" alt="" class="Accimg">
+                
+
+                </div>
+
+                <div class="main-accordion">
+
+                    <h3>Заголовок2</h3>
+                    <p>описание2</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+   </div>     
+
+</main>
+   
+</body>
+</html>
