@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="slider">
+            <div class="slider_body">
+                <div class="slider_arrow arrow_left"><i class="fas fa-chevron-left"></i></div>
+                <div class="slider_content">
+                    <div class="slider_item active">
+                        <img class="slider_img" src="assets/img/challenger.jpg" alt="Image 1">
+                    </div>
+                    <div class="slider_item">
+                        <img class="slider_img" src="assets/img/charger.jpg" alt="Image 2">
+                    </div>
+                    <div class="slider_item">
+                        <img class="slider_img" src="assets/img/ram.jpg" alt="Image 3">
+                    </div>
+                    <div class="slider_item">
+                        <img class="slider_img" src="assets/img/durango.jpg" alt="Image 4">
+                    </div>
+                </div>
+                <div class="slider_arrow arrow_right"><i class="fas fa-chevron-right"></i></div>
+            </div>
+            <div class="slider_dots">
+                <div class="slider_dot active" data-index="0"></div>
+                <div class="slider_dot" data-index="1"></div>
+                <div class="slider_dot" data-index="2"></div>
+                <div class="slider_dot" data-index="3"></div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
